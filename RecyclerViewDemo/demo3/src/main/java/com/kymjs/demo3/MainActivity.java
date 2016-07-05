@@ -6,8 +6,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 /**
- * 
- * 
  * Created by ZhangTao on 7/4/16.
  */
 public class MainActivity extends Activity {
@@ -26,10 +24,6 @@ public class MainActivity extends Activity {
         recyclerview.setLayoutManager(gridLayoutManager);
         final Demo3Adapter adapter = new Demo3Adapter(this);
         recyclerview.setAdapter(adapter);
-
-        Divider divider = new Divider(this, Divider.VERTICAL_LIST);
-        divider.setDivider(getResources().getDrawable(R.drawable.ic_axis_top_line));
-        recyclerview.addItemDecoration(divider);
 
         //设置头部及底部View占据整行空间
         gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
