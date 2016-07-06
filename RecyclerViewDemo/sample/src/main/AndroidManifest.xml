@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kymjs.sample">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Demo1Activity" />
+        <activity android:name=".Demo2Activity" />
+        <activity android:name=".Demo3Activity1" />
+        <activity android:name=".Demo3Activity2" />
+        <activity android:name=".Demo4Activity" />
+        <activity android:name=".Demo5Activity" />
+
+    </application>
+
+</manifest>
